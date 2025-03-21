@@ -2,16 +2,16 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mysql-headless
-  namespace: expense
+  namespace: expense1
   labels:
     app: mysql
-    project: expense
+    project: expense1
     tier: db
 spec:
   clusterIP: None
   selector:
     app: mysql
-    project: expense
+    project: expense1
     tier: db
   ports:
   - protocol: TCP
@@ -22,15 +22,15 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mysql
-  namespace: expense
+  namespace: expense1
   labels:
     app: mysql
-    project: expense
+    project: expense1
     tier: db
 spec:
   selector:
     app: mysql
-    project: expense
+    project: expense1
     tier: db
   ports:
   - protocol: TCP
