@@ -27,4 +27,4 @@ spec:
         image: nagaleelachandrala/backend:{{ .Values.deployment.version }}
         envFrom:
         - configMapRef:
-          name: backend
+            name: backend1

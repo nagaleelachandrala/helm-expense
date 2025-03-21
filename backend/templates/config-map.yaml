@@ -4,4 +4,4 @@ metadata:
   name: backend
   namespace: expense1
 data:
-  DB_HOST: backend
+  DB_HOST: mysql
